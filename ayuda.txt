@@ -1,0 +1,42 @@
+npm create vite@latest
+cd nombre del proyecto
+npm install 
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+-en el archivo tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './pages/**/*.{html,js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+--el archivo App.css debe tener solo estas 3 lineas
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+--El index.css debe quedar en blanco
+
+--agregar el  componente de React
+npm install react-router-dom@latest
+
+--agregar formularios 
+npm install react-hook-form@latest
+
+-- agregar el archivo .env
+VITE_USURIOS_URL=http://45.190.241.172:5000
+VITE_APP_NAME=blogcmh
+VITE_PORT=4000
+
+
+
+
+
