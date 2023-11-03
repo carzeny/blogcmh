@@ -36,7 +36,18 @@ VITE_USURIOS_URL=http://45.190.241.172:5000
 VITE_APP_NAME=blogcmh
 VITE_PORT=4000
 
+--para poder usar el comando process.cwd dentro del archivo vite.config.ts
+npm i --save-dev @types/node
+
+---opciones de git
+git init
+git remote add origin https://github.com/carzeny/blogcmh.git
+
+git branch -m main
 
 
+--agregar algunos componentes de React
+npm install @headlessui/react
+npm install @heroicons/react
 
 
